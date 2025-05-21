@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>formulaire </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1> formulaire</h1>
+        
+        <form action="process.php" method="post">
+           
+            <div class="input-group">
+                <label for="name"> name   :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+           
+            <div class="input-group">
+                <label for="email">imail :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">password :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="input-group">
+                <label>Les hobbie :</label>
+                <div>
+                    <input type="checkbox" id="sports" name="hobbies[]" value="footpall ">
+                    <label for="sports"> footpall</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="reading" name="hobbies[]" value="la lecture">
+                    <label for="reading">la lecture</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="reading" name="hobbies[]" value="le theatre">
+                    <label for="reading">le theatre</label>
+                </div>
+            </div>
+            
+            <button type="submit">inscription</button>
+        </form>
+    </div>
+</body>
+</html>
